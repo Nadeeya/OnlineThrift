@@ -1,0 +1,53 @@
+.title-heading{
+  text-align: center;
+
+}
+
+.title-heading::first-letter{
+  text-transform: uppercase;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width:80%;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:5%;
+  margin-bottom: 5%;
+          
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+/* Add rounded corners to the top left and the top right corner of the image */
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.display {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .display {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .display {
+    grid-template-columns: auto ;
+  }
+}
+      
